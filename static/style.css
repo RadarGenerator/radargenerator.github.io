@@ -108,7 +108,7 @@ header h1 img {
 
 .container {
 	margin: 0 auto;
-	padding: 0 0rem;
+	padding: 0 1rem;
 	max-width: 1440px;
 	width: 100%;
 }
