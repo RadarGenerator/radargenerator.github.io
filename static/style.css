@@ -24,7 +24,7 @@ body {
 	font: 16px/1.5 Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
 	color: #ffffff;
 	background-color: #0c121c;
-	background-image: radial-gradient(1800px 1300px at 0% 90%, #b2704167, #27384f71);
+	background-image: radial-gradient(1800px 1300px at 0% 800px, #b2704167, #27384f71);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -255,19 +255,110 @@ header h1 img {
 	text-decoration: underline;
 }
 
-.libraries {
-	max-width: 1800px;
+.feature {
+	display: flex;
+	justify-content: space-between; /* Spaces out the panels */
+	align-items: center; /* Vertically aligns items */
+
+	padding-bottom: 3rem;
+  }
+  
+  .feature-left, .feature-right {
+	flex: 1; /* Ensures both panels take up equal space */
+	padding: 20px; /* Optional padding for inner spacing */
+  }
+  
+  .feature-left {
+	padding-right: 10px; /* Adds space between text and line */
+	border-right: 2px solid #ccc; /* Adds line dividing the two panels */
+
+  }
+  
+  .feature-title {
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+  
+  .feature-description {
+	font-size: 16px;
+  }
+  
+  
+  .feature-right {
+		display: flex;
+		flex-direction: column; /* Stacks the image and caption vertically */
+		justify-content: center;
+		align-items: center; /* Centers both image and caption */
+
+		max-height: 600px;
+	 
+
+  }
+
+  .image-caption {
+	font-size: 14px; /* Smaller text */
+	color: #ffffff; /* Light gray color for the caption */
+  }
+
+  .feature-video {
+	max-width: 600px;  /* Ensures the video fits within the container's width */
+	max-height: 100%; /* Limit the height of the video */
+	width: auto;      /* Automatically adjusts the width based on the aspect ratio */
+	height: auto;     /* Keeps aspect ratio intact */
+	object-fit: cover;  /* Optional: Makes the video fill the container while preserving aspect ratio */
+  }
+  
+  .feature-image{
+	max-width: 600px;
+	max-height: 100%; /* Limit the height of the video */
+	width: auto;
+	height: auto;     /* Keeps aspect ratio intact */
+	object-fit: cover;  /* Optional: Makes the video fill the container while preserving aspect ratio */
+  }
+
+  .features {
+	max-width: 95%;
 	padding: 5rem 0;
 	margin: 0 auto;
 	margin-top: 5rem;
 	border-radius: 4rem;
 	background: linear-gradient(rgb(12 18 28 / 0%) 0%, rgb(38 48 64 / 64%) 100%);
+	}
+	
+.features .container {
+display: flex;
+  align-items: center; /* Aligns items vertically */
+  justify-content: space-between; /* Optional: Adds space between items */
 }
 
-.libraries .container {
-	display: flex;
-	justify-content: space-between;
-	gap: 1rem;
+/* Responsive Layout for Mobile */
+@media (max-width: 900px) {
+	.feature {
+		flex-direction: column; /* Stack content vertically */
+	}
+
+	.feature-left {
+		padding-right: 0; /* Remove right padding */
+		border-right: none; /* Remove vertical border */
+		border-bottom: 2px solid #ccc; /* Add horizontal border */
+		padding-bottom: 20px; /* Add spacing below the text */
+	}
+
+	.feature-right {
+		align-items: center; /* Center the video and caption */
+	}
+
+	.feature-video{
+		max-width: 100%; /* Ensure video width fits smaller screens */
+		width: 100%;     /* Use full width of the container */
+		height: auto;    /* Maintain aspect ratio */
+	}
+
+	.feature-image{
+		max-width: 100%; /* Ensure video width fits smaller screens */
+		width: 100%;     /* Use full width of the container */
+		height: auto;    /* Maintain aspect ratio */
+	}
 }
 
 .library-code {

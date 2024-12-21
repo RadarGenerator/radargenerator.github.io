@@ -86,5 +86,58 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="features">
+
+			<div class="feature">
+				<div class="feature-left">
+					<h2 class="feature-title">Radar Compositing</h2>
+					<p class="feature-description">The renderer outputs a series of grayscale depth maps which the compositor consumes in order to generate the final radar image.</p>
+					<p class="feature-description">During the compositing stage we interpolate colors over the depth-maps based on non-linear user defined gradients, compute depth based ambient occlusion and calculate strokes and glow effects.</p>
+					<p class="feature-description">Optionally, we allow the user to export these depth maps for custom compositing.</p>
+				</div>
+			  	
+				<div class="feature-right">
+					<video class="feature-video" autoplay muted playsinline loop>
+						<source src="static/feature_radarcomp.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					  </video>
+					<p class="image-caption">RadGen's compositor combining the raw depth-maps into the final output</p>
+				</div>
+			</div>
+
+			<div class="feature">
+				<div class="feature-left">
+					<h2 class="feature-title">Responsive UI</h2>
+					<p class="feature-description">RadGen's user interface is purpose built to be user friendly and easy to use with a focus on responsiveness.</p>
+					<p class="feature-description">Initially the only goal of RadGen 2.0 was to take the existing code and add an intuitive user interface to replace the old command line interface.</p>
+					<p class="feature-description">As the project grew we ended up rewriting about 90% of the original code, but the initial goal remained.</p>
+				</div>
+			  	
+				<div class="feature-right">
+					<video class="feature-video" autoplay muted playsinline loop>
+						<source src="static/feature_ui.webm" type="video/webm">
+						Your browser does not support the video tag.
+					  </video>
+					<p class="image-caption">A showcase of our UI</p>
+				</div>
+			</div>
+
+			<div class="feature">
+				<div class="feature-left">
+					<h2 class="feature-title">Custom 3D Renderer</h2>
+					<p class="feature-description">Even though we usually render from top down orthographic, our renderer is fully 3D! This allows us to support arbitrary meshes and scenes, in arbitrary setups and take advantage of optimisations such as depth buffering.</p>
+					<p class="feature-description">The user can toggle on this 3D rendering option, which can be useful for debugging color gradients or creating level screenshots or artwork.</p>
+			
+			  	</div>
+			  	
+				<div class="feature-right">
+					<img class="feature-image" src="static/feature_3drenderer.png" alt="Feature Image">
+					<p class="image-caption">CS2 Inferno rendered in an isometric perspective</p>
+				</div>
+			</div>
+
+		</div>
+
 	</body>
 </html>
