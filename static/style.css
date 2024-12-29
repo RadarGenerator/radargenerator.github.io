@@ -443,12 +443,8 @@ display: flex;
 .footer .container {
 	display: flex;
 	justify-content: space-between;
-	align-items: end;
+	align-items: center;
 	gap: 1rem;
-}
-
-.footer .footer-right {
-	text-align: right;
 }
 
 .hljs {
