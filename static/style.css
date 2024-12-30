@@ -129,8 +129,31 @@ header h1 img {
 	padding: .5rem 1rem;
 }
 
+.hero .documentation .btn_docs {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	color: #ffffff;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	background: var(--color-accent);
+	border-radius: 0.6rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	line-height: 1;
+	padding: .5rem 1rem;
+}
+
 .hero .download-dev {
 	font-size: 1rem;
+}
+
+
+.documentation-notes-text
+{
+	color: inherit;
+	text-decoration: none;
 }
 
 .hero .download-version,
@@ -147,6 +170,8 @@ header h1 img {
 	color: var(--color-accent);
 }
 
+.hero .documentation .btn_docs:hover,
+.hero .documentation .btn_docs:focus,
 .hero .download .btn:hover,
 .hero .download .btn:focus {
 	text-decoration: none;
@@ -154,35 +179,45 @@ header h1 img {
 	background: rgb(76, 111, 182);
 }
 
+.hero .documentation .btn:hover span,
+.hero .documentation .btn:focus span
 .hero .download .btn:hover span,
 .hero .download .btn:focus span {
 	text-decoration: underline;
+}
+
+.hero .documentation
+{
+	margin-top: 20px;
 }
 
 .hero .download {
 	margin-top: 60px;
 }
 
+.hero .documentation-text,
 .hero .download-text {
 	margin-left: .5rem;
-	color: white
+	color: white;
 }
 
+.hero .documentation-text span,
 .hero .download-text span {
 	white-space: nowrap;
 }
 
+.documentation-notes-text,
 .hero .download-version {
 	font-size: .8rem;
 	margin-top: .4rem;
-	
 }
 
-.hero .download svg {
+.hero .documentation img {
 	align-self: center;
 	flex-shrink: 0;
 }
 
+.hero .documentation-reqs,
 .hero .download-reqs {
 	font-size: .8rem;
 	
@@ -606,6 +641,7 @@ a.hljs-built_in {
 		display: none;
 	}
 
+	.hero .documentation .btn_docs,
 	.hero .download .btn {
 		display: flex;
 	}
@@ -616,8 +652,15 @@ a.hljs-built_in {
 		text-align: center;
 	}
 
+	.hero .documentation-notes,
 	.hero .download-notes {
 		text-align: center;
+	}
+
+	.hero .documentation-test {
+		font-size: 1rem;
+		margin-top: 1rem;
+		margin-left: 0;
 	}
 
 	.hero .download-version {
