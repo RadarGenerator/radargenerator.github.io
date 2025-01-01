@@ -145,6 +145,22 @@ header h1 img {
 	padding: .5rem 1rem;
 }
 
+.hero .donation .btn_docs {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	color: #ffffff;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	background: var(--color-accent);
+	border-radius: 0.6rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	line-height: 1;
+	padding: .5rem 1rem;
+}
+
 .hero .download-dev {
 	font-size: 1rem;
 }
@@ -170,6 +186,8 @@ header h1 img {
 	color: var(--color-accent);
 }
 
+.hero .donation .btn_docs:hover,
+.hero .donation .btn_docs:focus,
 .hero .documentation .btn_docs:hover,
 .hero .documentation .btn_docs:focus,
 .hero .download .btn:hover,
@@ -179,11 +197,18 @@ header h1 img {
 	background: rgb(76, 111, 182);
 }
 
+.hero .donation .btn:hover span,
+.hero .donation .btn:focus span
 .hero .documentation .btn:hover span,
 .hero .documentation .btn:focus span
 .hero .download .btn:hover span,
 .hero .download .btn:focus span {
 	text-decoration: underline;
+}
+
+.hero .donation
+{
+	margin-top: 20px;
 }
 
 .hero .documentation
@@ -195,12 +220,14 @@ header h1 img {
 	margin-top: 60px;
 }
 
+.hero .donation-text,
 .hero .documentation-text,
 .hero .download-text {
 	margin-left: .5rem;
 	color: white;
 }
 
+.hero .donation-text span,
 .hero .documentation-text span,
 .hero .download-text span {
 	white-space: nowrap;
@@ -212,11 +239,17 @@ header h1 img {
 	margin-top: .4rem;
 }
 
+.hero .donation img {
+	align-self: center;
+	flex-shrink: 0;
+}
+
 .hero .documentation img {
 	align-self: center;
 	flex-shrink: 0;
 }
 
+.hero .donation-reqs,
 .hero .documentation-reqs,
 .hero .download-reqs {
 	font-size: .8rem;
@@ -641,6 +674,7 @@ a.hljs-built_in {
 		display: none;
 	}
 
+	.hero .donation .btn_docs,
 	.hero .documentation .btn_docs,
 	.hero .download .btn {
 		display: flex;
@@ -652,6 +686,7 @@ a.hljs-built_in {
 		text-align: center;
 	}
 
+	.hero .donation-notes,
 	.hero .documentation-notes,
 	.hero .download-notes {
 		text-align: center;
